@@ -1,6 +1,6 @@
 # focus-mobile-interview
 
-### The test uses python3.8
+### This solution uses python3.8
 
 #### clone this repo
 `git clone https://github.com/FAenX/focus-mobile-interview.git`
