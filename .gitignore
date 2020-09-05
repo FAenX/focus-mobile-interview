@@ -3,6 +3,10 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+
+currencies.csv
+.vscode
+
 # C extensions
 *.so
 
