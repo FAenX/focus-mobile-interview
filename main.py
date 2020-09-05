@@ -18,7 +18,7 @@ def findCurrency(currency):
     with open("currencies.csv", newline='') as csvfile:
         reader = csv.reader(csvfile, delimiter=",")
         for row in reader:            
-            if row[2].lower() == currency:      
+            if row[2].lower() == currency.lower():      
                 return row
             
 
@@ -34,10 +34,13 @@ def parseArgs():
 # run code
 if __name__ == '__main__':
     args = parseArgs()
-    currency = args.currency.lower()
-    result = findCurrency(currency)
-    if result != None:
-        print('Currency available')
+    if args.currency:
+        result = findCurrency(args.currency)
+        if result != None:
+            print(result)
+            print('Currency available')
+        else: 
+            print('Currency NOT available')
     else: 
-        print('Currency NOT available')
+        print('expecting arguments. use -h flag for help')
     
