@@ -1,7 +1,6 @@
 # focus-mobile-interview
 
-The test uses python3.8
-pip install will not work outside a virtual env 
+### The test uses python3.8
 
 #### clone this repo
 `git clone https://github.com/FAenX/focus-mobile-interview.git`
